@@ -3,12 +3,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ahnaf Johari</title>
 </head>
 <body>
     <h1>Imagination</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nulla labore libero alias ducimus distinctio fuga voluptatibus rerum autem expedita ab itaque nobis, dolores nihil quaerat ad! Illo, aperiam reiciendis.</p>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nulla labore libero alias ducimus distinctio fuga voluptatibus rerum autem expedita ab itaque nobis, dolores nihil quaerat ad! Illo, aperiam reiciendis.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nulla labore libero alias ducimus distinctio fuga voluptatibus rerum autem expedita ab itaque nobis, dolores nihil quaerat ad! Illo, aperiam reiciendis.</p>
+    <div id="Page">
+        <!-- <div id="Background"><canvas data-engine="three.js r146" width="1162" height="928"
+                style="width: 1162.28px; height: 928.281px;"></canvas>
+        </div>
+        <div class="mask" id="Mask">
+            <div class="mask_top"></div>
+            <div class="mask_bottom"></div>
+        </div>
+        <div class="frame" id="Frame">
+            <div class="frame_line frame_line-left"></div>
+            <div class="frame_line frame_line-right"></div>
+            <div class="frame_line frame_line-top"></div>
+            <div class="frame_line frame_line-bottom"></div>
+        </div>
+        <div class="theme" id="Theme" x-data="" @click="$store.ui.toggleTheme()">
+            <div class="theme_color is-selected" :class="{ 'is-selected': $store.ui.theme === 'light' }">
+                <div class="_box"></div>
+                <div class="_text">Light</div>
+            </div>
+            <div class="theme_color" :class="{ 'is-selected': $store.ui.theme === 'dark' }">
+                <div class="_box"></div>
+                <div class="_text">Dark</div>
+            </div>
+        </div> -->
+        <header class="siteHeader" id="SiteHeader">
+            <h1 class="siteHeader_title">Ahnaf Johari</h1>
+            <p class="siteHeader_label">Front-end Web Developer &amp; Web Applications</p>
+            <nav class="siteHeader_nav" x-data="">
+                <ol>
+                    <li :class="{ 'is-selected': $store.ui.currentPath === '/' }" class="is-selected">
+                        <div class="_dot">●</div><a class="_text" href="/">Home</a>
+                    </li>
+                    <li :class="{ 'is-selected': $store.ui.currentPath === '/projects/' }">
+                        <div class="_dot">●</div><a class="_text" href="/projects/">Projects</a>
+                    </li>
+                    <li :class="{ 'is-selected': $store.ui.currentPath === '/info/' }">
+                        <div class="_dot">●</div><a class="_text" href="/info/">Info</a>
+                    </li>
+                    <li :class="{ 'is-selected': $store.ui.currentPath === '/contact/' }">
+                        <div class="_dot">●</div><a class="_text" href="/contact/">Contact</a>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+        <!-- <main class="content" id="Content" data-scroll="area">
+            <div class="content_inner" data-scroll="target" style="transform: translate3d(0px, 0px, 0px);">
+                <section class="page" data-page="home" style="display: block; opacity: 1;">
+                    <div class="page_content home">
+                        <p class="home_aboutme"><span>Born in 1994</span><span>in Osaka, Japan.</span><span>I
+                                believe</span><span>web design</span><span>can be more</span><span>diverse and
+                                inspiring.</span><span>With a mission</span><span>to present</span><span>the
+                                possibilities</span><span>of web design,</span><span>I am pursuing</span><span>new
+                                expressions</span><span>through experiments</span><span>and thoughts.</span></p>
+                    </div>
+                </section>
+                <section class="page" data-page="projects">
+                    <div class="page_content project">
+                        <div class="project_section">
+                            <h2 class="project_heading">■ Projects (Design &amp; Develop)</h2>
+                            <div class="project_list"><a class="project_item text-btn" href="https://punchred.xyz/"
+                                    target="_blank" rel="noopener">
+                                    <div class="project_title">PUNCH Portfolio</div>
+                                    <div class="project_info">2022 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://solani-illustration.xyz/" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">SOLANI Portfolio</div>
+                                    <div class="project_info">2022 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://revenge-pop.mikapikazo.info/"
+                                    target="_blank" rel="noopener">
+                                    <div class="project_title">REVENGE POP</div>
+                                    <div class="project_info">2022 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://holo.punchred.xyz" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">HOLO.g</div>
+                                    <div class="project_info">2021 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://pan-projects.com" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">PAN- PROJECTS</div>
+                                    <div class="project_info">2021 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://yoshikiokamura.art" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">Yoshiki Okamura Portfolio</div>
+                                    <div class="project_info">2021 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://buoy.work" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">buoy Portfolio</div>
+                                    <div class="project_info">2020 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://experiments.p5aholic.me" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">Experiments</div>
+                                    <div class="project_info">2020 / Personal</div>
+                                </a><a class="project_item text-btn" href="https://100daysofpoetry.gallery" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">100 DAYS OF POETRY</div>
+                                    <div class="project_info">2020 / Commission</div>
+                                </a></div>
+                        </div>
+                        <div class="project_section">
+                            <h2 class="project_heading">■ Projects (Only Develop)</h2>
+                            <div class="project_list"><a class="project_item text-btn" href="https://vixi-vixi.jp"
+                                    target="_blank" rel="noopener">
+                                    <div class="project_title">VIXI</div>
+                                    <div class="project_info">2021 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://signif.jp" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">Signif</div>
+                                    <div class="project_info">2020 / Commission</div>
+                                </a><a class="project_item text-btn" href="https://nanameinc.jp" target="_blank"
+                                    rel="noopener">
+                                    <div class="project_title">naname</div>
+                                    <div class="project_info">2020 / Commission</div>
+                                </a></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" data-page="info">
+                    <div class="page_content info">
+                        <div class="info_item info_item-1">
+                            <div class="info_content">
+                                <ul>
+                                    <li><a class="text-btn" href="https://twitter.com/P5_keita" target="_blank"
+                                            rel="noopener">Twitter ↗</a></li>
+                                    <li><a class="text-btn" href="https://www.instagram.com/p5aholic/" target="_blank"
+                                            rel="noopener">Instagram ↗</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="info_item info_item-2">
+                            <div class="info_content">
+                                <ul>
+                                    <li><a class="text-btn" href="https://experiments.p5aholic.me" target="_blank"
+                                            rel="noopener">experiments.p5aholic.me ↗</a></li>
+                                    <li><a class="text-btn" href="https://playground.p5aholic.me" target="_blank"
+                                            rel="noopener">playground.p5aholic.me ↗</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="info_item info_item-3">
+                            <div class="info_content">
+                                <ul>
+                                    <li><span class="is-light">Awwwards Independent of the Year<br></span><span>2020
+                                            Nominee</span></li>
+                                    <li><span class="is-light">Awwwards Site of the Day<br></span><span>Web Graphic
+                                            Experiments</span></li>
+                                    <li><span class="is-light">Awwwards Site of the Day<br></span><span>100 DAYS OF
+                                            POETRY</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" data-page="contact">
+                    <div class="page_content contact">
+                        <div class="contact_wrap"><a class="contact_text jp text-btn"
+                                href="https://p5aholic.notion.site/p5aholic/Web-aac658c501b8458080dcc19e5ff26e51"
+                                target="_blank" rel="noopener">制作の依頼について ↗</a><a class="contact_text en text-btn"
+                                href="https://p5aholic.notion.site/p5aholic/Contact-f7a0724e15d44eaebddbf7f09459aef4"
+                                target="_blank" rel="noopener">Contact Form ↗</a></div>
+                    </div>
+                </section>
+            </div>
+        </main> -->
+    </div>
 </body>
 </html>
